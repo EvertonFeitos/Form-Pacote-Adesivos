@@ -1,0 +1,131 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+body
+{
+	background-color: rgb(134, 104, 161);
+    margin: 10px;
+
+}
+
+.container
+{
+	font-family: sans-serif;
+	border-radius: 20px;
+	border-color: rgb(61, 25, 82);
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	margin: 0 !important;
+	padding: 0 !important;
+
+}
+
+#topo
+{
+
+	text-align: left;
+	padding: 15px;
+	color: #fff;
+	border-radius: 20px;
+	background-color: rgb(61, 25, 82);
+
+
+}
+
+
+.formularioEspacamento
+{
+	padding: 15px;
+}
+
+#quantidade
+{
+	width: 10%;
+	height: 5vh;
+	background-color: rgb(243, 211, 241);
+	border-radius: 10px;
+}
+
+.btnEnviar
+{
+	text-align: center;
+}
+
+.botao
+{
+	font-size: 16px;
+	background-color:rgb(61, 25, 82);
+	border-radius: 8px;
+	padding: 10px;
+	font-family: sans-serif;
+	color:#fff;
+}
+
+.botaoQuantidade
+{
+	font-size: 26px;
+	background-color:rgb(61, 25, 82);
+	border-radius: 8px;
+	width: 10%;
+	font-family: sans-serif;
+	color:#fff;
+}
+
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: rgb(243, 211, 241);
+	border-radius: 10px;
+	padding: 10px;
+  }
+
+
+
+/*configurações grade*/
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  [class*="col-"] {
+	float: left;
+	padding: 15px;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+	  float: left;
+	padding: 0;
+	}
+
+	.container
+	{
+		padding: 15px;
+	}
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cadastro</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+	  <div class="row">
+		 <div class="col-4"></div>
+	     <div class="col-4 container">
+            <div id="topo">
+				<h2>Selecione seu<h2><h1><strong>pacote de adesivos</strong></h1>
+		     </div>
+
+			<form>
+				<div class="formularioEspacamento">
+				   <label><strong>Quais adesivos:</strong></label>
+				   <br>
+                   <br>
+				   <div>
+					   <input type="checkbox" name="adesivo1" id="adesivo1" value="React">
+					   <label for="adesivo1">React</label>
+				   </div>
+				   <div>
+					   <input type="checkbox" name="adesivo2" id="adesivo2" value="Vue">
+					   <label for="adesivo2">Vue</label>
+				   </div>
+				   <div>
+					   <input type="checkbox" name="adesivo3" id="adesivo3" value="Angular">
+					 <label for="adesivo3">Angular</label>
+				   </div>
+				   <div>
+					   <input type="checkbox" name="adesivo4" id="adesivo4" value="JavaScript">
+					 <label for="adesivo4">JavaScript</label>
+				   </div>
+				</div>
+
+				<div class="formularioEspacamento">
+
+				   <label for="quantidade"><strong>Quantos adesivos de cada?</strong></label>
+				   <br>
+				   <br>
+				   <button class="botaoQuantidade">-</button>
+				   <input type="text" name="quantidade" id="quantidade">
+				   <button class="botaoQuantidade">+</button>
+				</div>
+				<div class="formularioEspacamento">
+				   <label for="observacoes"><strong>Observações:</strong></label>
+				   <br>
+				   <br>
+				   <textarea placeholder="Alguma dúvida? Algum recado?" name="observacoes" id="observacoes" rows="6"></textarea>
+				</div>
+				<br>
+				<div class="btnEnviar">
+					<button type="submit" class="botao">ENVIAR</button>
+			    </div>
+			 </form>
+
+	  </div>
+
+	  </div>
+   </body>
+</html>

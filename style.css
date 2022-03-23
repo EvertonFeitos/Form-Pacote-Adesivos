@@ -5,14 +5,16 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	position: relative;
+
 
 }
 
 body
 {
 	background-color: rgb(134, 104, 161);
-    margin: 10px;
+    font-family: Arial;
+	font-size: 17px;
+    padding: 8px;
 
 }
 

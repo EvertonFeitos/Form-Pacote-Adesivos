@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cadastro</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-	  <script type="text/javascript" src="script.js"></script>
 
-   </head>
-   <body>
-	  <div class="row">
-		 <div class="col-4"></div>
-	     <div class="col-4 container">
-            <div id="topo">
-				<h2>Selecione seu<h2><h1><strong>pacote de adesivos</strong></h1>
-		     </div>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4 container">
+			<div id="topo">
+				<p>Selecione seu
+				<p>
+				<h2><strong>pacote de adesivos</strong></h2>
+			</div>
 
 			<form>
 				<div class="formularioEspacamento">
-				   <label><strong>Quais adesivos:</strong></label>
-				   <br>
-                   <br>
-				   <div>
-					   <input type="checkbox" name="adesivo1" id="adesivo1" value="React">
-					   <label for="adesivo1">React</label>
-				   </div>
-				   <div>
-					   <input type="checkbox" name="adesivo2" id="adesivo2" value="Vue">
-					   <label for="adesivo2">Vue</label>
-				   </div>
-				   <div>
-					   <input type="checkbox" name="adesivo3" id="adesivo3" value="Angular">
-					 <label for="adesivo3">Angular</label>
-				   </div>
-				   <div>
-					   <input type="checkbox" name="adesivo4" id="adesivo4" value="JavaScript">
-					 <label for="adesivo4">JavaScript</label>
-				   </div>
+					<label><strong>Quais adesivos:</strong></label>
+					<br>
+
+					<div>
+						<input type="checkbox" name="Adesivo" id="adesivo_react" value="React">
+						<label for="React">React</label>
+					</div>
+					<div>
+						<input type="checkbox" name="Adesivo" id="adesivo_vue" value="Vue">
+						<label for="Vue">Vue</label>
+					</div>
+					<div>
+						<input type="checkbox" name="Adesivo" id="adesivo_angular" value="Angular">
+						<label for="Angular">Angular</label>
+					</div>
+					<div>
+						<input type="checkbox" name="Adesivo" id="adesivo_javascript" value="JavaScript">
+						<label for="JavaScript">JavaScript</label>
+					</div>
 				</div>
 
 				<div class="formularioEspacamento">
 
-				   <label for="quantidade"><strong>Quantos adesivos de cada?</strong></label>
-				   <br>
-				   <br>
-				   <button type="button" class="botaoQuantidade" onclick= "QuantSubtrair()">-</button>
-				   <input type="text" name="quantidade" id="quantidade" placeholder="0" disabled="disabled">
-				   <button type="button" class="botaoQuantidade" onclick= "QuantSoma()">+</button>
+					<label for="quantidade"><strong>Quantos adesivos de cada?</strong></label>
+					<br>
+
+					<button type="button" class="botaoQuantidade" onclick="QuantSubtrair()">-</button>
+					<input type="text" name="quantidade" id="quantidade" placeholder="0" disabled="disabled">
+					<button type="button" class="botaoQuantidade" onclick="QuantSoma()">+</button>
 				</div>
 				<div class="formularioEspacamento">
-				   <label for="observacoes"><strong>Observações:</strong></label>
-				   <br>
-				   <br>
-				   <textarea placeholder="Alguma dúvida? Algum recado?" name="observacoes" id="observacoes" rows="6"></textarea>
+					<label for="observacoes"><strong>Observações:</strong></label>
+					<br>
+
+					<textarea placeholder="Alguma dúvida? Algum recado?" name="observacoes" id="observacoes"
+						rows="6"></textarea>
 				</div>
 				<br>
 				<div class="btnEnviar">
-					<button type="submit" class="botao">ENVIAR</button>
-			    </div>
-			 </form>
+					<button onclick="enviar()" class="botao">ENVIAR</button>
+				</div>
+			</form>
 
-	  </div>
+		</div>
 
-	  </div>
-	  <script type="text/javascript" src="script.js"></script>
-   </body>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
